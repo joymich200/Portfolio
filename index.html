@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joy Michael — Front-End Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Portfolio of Joy Michael — Front-end web developer. Projects, skills, contact and downloadable CV." />
+  </head>
+<body>
+
+     <!-- NAV -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">JM</div>
+        <div>
+          <div style="font-weight:800">Joy Michael</div>
+          <div style="font-size:12px;color:var(--muted);font-weight:600">Front-end Web Developer</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" data-link>Home</a></li>
+          <li><a href="#about" data-link>About</a></li>
+          <li><a href="#projects" data-link>Projects</a></li>
+          <li><a href="#cv" data-link>CV</a></li>
+          <li><a href="#contact" data-link>Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" aria-label="Open menu"><span></span></button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="container" id="mobileMenu" style="display:none;margin-bottom:12px">
+      <div class="card" style="padding:12px;">
+        <nav>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px">
+            <li><a href="#home" data-link>Home</a></li>
+            <li><a href="#about" data-link>About</a></li>
+            <li><a href="#projects" data-link>Projects</a></li>
+            <li><a href="#cv" data-link>CV</a></li>
+            <li><a href="#contact" data-link>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1 class="reveal">Hello — I am <strong>Joy Michael</strong></h1>
+          <div class="roles reveal">I am a <span id="typed">Front-end Web Developer</span></div>
+          <p class="lead muted reveal">I build fast, accessible and responsive front-end interfaces using HTML, CSS and JavaScript<br>— focused on clean code and great user experience.</p>
+
+          <div class="cta reveal">
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn ghost" href="image/Resume.pdf" download="Joy_Michael_CV.pdf">Download CV</a>
+          </div>
+
+          <div class="social reveal" style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+            <a class="btn ghost" href="https://www.linkedin.com/in/michael-joy-43521a364" target="_blank">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/joymich200" target="_blank">GitHub</a>
+            <a class="btn ghost" href="https://www.instagram.com/joymich200" target="_blank">Instagram</a>
+            <a class="btn ghost" href="https://www.facebook.com/share/1Fsz6QbQ4v/" target="_blank">Facebook</a>
+          </div>
+
+        </div>
+
+        <aside class="card reveal">
+ <div class="avatar">
+  <img src="image/IMG-20230612-WA0017_1(0).jpg" alt="Joy Michael">
+</div>          <h3 style="margin-top:12px">Joy Michael</h3>
+          <div class="muted" style="font-weight:600">Front-end Web Developer</div>
+          <p class="muted" style="margin-top:10px">Skills and technologies I regularly use:</p>
+          <div class="skill-list">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS (Flex & Grid)</span>
+            <span class="skill">JavaScript (ES6+)</span>
+            <span class="skill">Responsive Design</span>
+            <span class="skill">Accessibility</span>
+            <span class="skill">Performance</span>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="btn" href="#contact">Hire me</a>
+            <a class="btn ghost" href="#cv">My CV</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+      <div class="section-title">About</div>
+      <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <h3>Short bio</h3>
+          <p class="muted">I craft user-friendly front-end experiences using modern HTML, CSS and vanilla JavaScript. I prefer building components that are easy to maintain, fast to load, and accessible to all users.</p>
+
+          <h4 style="margin-top:12px">What I do</h4>
+          <ul class="muted">
+            <li>Build responsive layouts and interfaces that work across devices.</li>
+            <li>Turn designs into production-ready HTML/CSS/JS.</li>
+            <li>Optimize for accessibility and performance.</li>
+            <li>Write clear, maintainable code and documentation.</li>
+          </ul>
+        </div>
+
+        <div style="width:320px">
+          <div class="card">
+            <strong>Quick facts</strong>
+            <p class="muted" style="margin-top:6px">Location: Lagos, Nigeria<br>Availability: Open to front-end roles & freelance work.</p>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="btn" href="mailto:joymichaelcares@gmail.com">Email</a>
+              <a class="btn ghost" href="tel:+2347039812009">Call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+      <div class="section-title">Projects</div>
+      <p class="muted">Selected projects that show how I build interfaces. Click any project to view details.</p>
+
+      <div style="margin-top:18px" class="projects-grid" id="projectsGrid">
+
+        <!-- Example project -->
+        <article class="project" data-title="Landing Page — Joy's Mix" data-desc="Responsive landing page with hero animation and contact capture." data-tags="HTML,CSS,JavaScript" data-link="https://joysmix.netlify.app/"  tabindex="0">
+          <div class="thumb"><img src="image/Screenshot 2025-09-04 205024.jpg" width="600px" height="150px" alt="Joy's Mix"></div>
+          <h4>Landing Page — Joy's Mix</h4>
+          <div class="meta"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+        </article>
+
+    
+        <article class="project" data-title="Business Website" data-desc="Responsive business website with hero animation, previous work done and contact capture." data-tags="HTML,CSS,JavaScript" data-link="https://shadepalettewallorg.netlify.app/" tabindex="0">
+          <div class="thumb"><img src="image/Screenshot (1).jpg" width="600px" height="150px" alt="Shade Palette & Wall"></div>
+          <h4>Business Website — Shade Palette & Wall</h4>
+          <div class="meta"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Modal for project preview -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-card" role="document">
+        <div class="modal-header">
+          <strong id="modalTitle">Project</strong>
+          <div style="display:flex;gap:8px">
+            <a id="modalLink" class="btn ghost" href="#" target="_blank" rel="noopener noreferrer">View site</a>
+            <button class="close-btn" id="modalClose">Close</button>
+          </div>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <p class="muted">Project description goes here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CV SECTION -->
+    <section id="cv" class="reveal">
+      <div class="section-title">CV</div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+        <div class="card" style="flex:1;min-width:260px">
+          <h3>Download my CV</h3>
+          <p class="muted">My up-to-date curriculum vitae (contains education, experience and contact information).</p>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="btn" href="image/Resume.pdf" download="Joy_Michael_CV.pdf">Download CV</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+      <div class="section-title">Contact</div>
+      <p class="muted">Let’s discuss your project or role. I reply within a few days.</p>
+
+      <div class="contact-grid" style="margin-top:14px">
+        <form id="contactForm" action="https://formspree.io/f/xkgqnyek" method="POST">
+          <input name="name" type="text" placeholder="Your name" required />
+          <input name="email" type="email" placeholder="Email address" required />
+          <input name="subject" type="text" placeholder="Subject" />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <div style="display:flex;gap:8px">
+            <button class="btn" type="submit">Send message</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="card">
+          <h4>Other ways to reach me</h4>
+          <p class="muted">Phone: +234 703 981 2009<br>Email: <a href="mailto:joymichaelcares@gmail.com">joymichaelcares@gmail.com</a></p>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+            <a class="btn ghost" href="https://www.linkedin.com/in/michael-joy-43521a364" target="_blank">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/joymich200" target="_blank">GitHub</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap">
+        <div class="muted">© 2025 Joy Michael</div>
+        <div class="muted">•</div>
+        <div class="muted">Built with HTML, CSS & JavaScript</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  </body>
+</html>
